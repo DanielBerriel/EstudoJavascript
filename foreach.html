@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Foreach</title>
+
+		<script>
+
+			/*
+			var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+			console.log(listaFuncionarios)
+			document.write(listaFuncionarios[3])
+
+			listaFuncionarios.forEach(function(valor, indice, array) {
+				//lógica
+				console.log('índice: ' + indice + ' | valor: ' + valor)
+
+				if(valor == 'Lucas') {
+					array[indice] = 'Um novo valor'
+				}
+			})
+
+			console.log(listaFuncionarios)
+			document.write('<br />' + listaFuncionarios[3])
+			*/
+
+			var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+
+			var lista_frutas = Array()
+
+			lista_frutas['x'] = 'Banana'
+			lista_frutas[false] = 'Maçã'
+			lista_frutas [27] = 'Morango'
+			lista_frutas[3] = 'Uva'
+			lista_frutas[-12] = 'Melão'
+
+
+
+			var f = function(valor, indice) {
+				console.log(valor, indice)
+			}
+
+			listaFuncionarios.forEach(f)
+			lista_frutas.forEach(f)
+
+			//forEach atua somente sobre valores numéricos partindo de 0
+
+		</script>
+
+	</head>
+
+	<body>
+	</body>
+</html>

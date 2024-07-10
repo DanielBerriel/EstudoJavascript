@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript - JS String</title>
+
+		<script>
+
+			var nome = 'Daniel Araújo Berriel'
+
+			//propriedade length
+			document.write(nome.length)
+
+			document.write('<br />')
+
+			//método charAt() -> retorna o caracter da posição passada
+			document.write(nome.charAt(7))
+
+			document.write('<br />')
+
+			//método indexOf() -> retorna a primeira posição do caracter passado
+			//caso não exista o caracter na string, o retorno é -1
+			document.write(nome.indexOf('e'))
+
+			document.write('<br />')
+
+			//método replace() -> substitui
+			//document.write(nome.replace('Araújo Berriel', 'Boy'))
+
+			document.write('<br />')
+
+			//método substr() -> apartir de uma posição, quantos caracteres se deve recuperar
+			document.write(nome.substr(7, 4))
+
+			document.write('<br />')
+
+			//métodos toLowerCase() e toUpperCase()
+			document.write(nome.toLowerCase())
+			document.write(nome.toUpperCase())
+
+			document.write('<br />')
+
+
+			//método trim() -> remove os espaços nas extremidades da string
+			var nome1 = ' Daniel Araújo Berriel '
+
+			document.write('-' + nome.trim() + '-')
+
+		</script>
+
+	</head>
+	<body>
+
+	</body>
+</html>

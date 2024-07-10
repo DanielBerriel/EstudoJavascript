@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ordenação de elementos no Array</title>
+
+		<script>
+
+			var objetos = Array('Cadeira', 'Impressora', 'Garfo')
+
+
+			function adiciona(){
+				var elemento = document.getElementById('campo_texto').value
+
+				if(elemento != ''){
+					if(objetos.indexOf(elemento) !== -1) {
+						alert('Objeto já foi adicionado.')
+					}else {
+						objetos.push(elemento)
+						console.log(objetos)
+					}
+				} else{
+					alert('Informe um objeto válido.')
+				}
+			}
+
+			function ordena() {
+				objetos.sort()
+				console.log(objetos)
+			}
+
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<input id="campo_texto" type="text" />
+
+		<button onclick="adiciona()" type="button">Adicionar</button>
+		<button onclick="ordena()"  type="button">Ordenar</button>
+
+	</body>
+</html>

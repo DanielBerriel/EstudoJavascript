@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BOM - Window</title>
+
+		<script>
+
+			var janela
+
+			function abrirPopUp() {
+				janela = window.open('', 'nova_janela', 'width=400, height=200' ) //-> (URL, name, specs, replace)
+			}
+
+			function fecharPopUp() {
+				janela.close() //->método nativo de objetos do tipo window
+			}
+
+		</script>
+	</head>
+	<body>
+
+		<button onclick="abrirPopUp()">Abrir Janela</button>
+		<button onclick="fecharPopUp()">Fechar Janela</button>
+		<button onclick="window.print()">Imprimir página</button>
+
+	</body>
+</html>

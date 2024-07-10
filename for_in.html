@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>For in</title>
+
+		<script>
+
+			
+			//var lista_convidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+			var lista_convidados = Array()
+
+			lista_convidados['a'] = 'Jorge'
+			lista_convidados[10] = 'Jamilton'
+			lista_convidados['zebra'] = 'José'
+			lista_convidados[-1] = 'Ana'
+			lista_convidados[true] = 'Maria'
+
+			console.log(lista_convidados)
+
+			for(var i in lista_convidados) {
+				console.log(i)
+				document.write('Índice ' + i + ' valor ' + lista_convidados[i] + '<br />')
+			}
+		
+
+			//A variável i recebe o valor dos índices do Array a cada iteração. Até chegar em um valor 'undefined'. Assim, ele consegue percorrer todos os índices do Array.
+
+		</script>
+
+	</head>
+
+	<body>
+	</body>
+</html>
